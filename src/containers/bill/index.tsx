@@ -68,7 +68,7 @@ const BillContainer = (): ReactElement => {
           dataSource={dataProducts}
           pagination={false}
           summary={(data) => {
-            const gradTotal = data.reduce((prev, curr) => prev + curr.price, 0)
+            const gradTotal = data.reduce((previous, current) => previous + current.price, 0)
             return (
               <Table.Summary>
                 <Table.Summary.Row>
