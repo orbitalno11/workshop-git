@@ -10,7 +10,7 @@ import {
   TitleNoMargin
 } from '@containers/bill/style'
 import { Text } from '@style/index'
-import { Col, Row, Table } from 'antd'
+import { Col, Input, Row, Table } from 'antd'
 import { ColumnsType } from 'antd/lib/table'
 import { ReactElement } from 'react'
 
@@ -51,12 +51,16 @@ const BillContainer = (): ReactElement => {
           <Row gutter={[8, 8]}>
             <Col span={7}>
               <TitleNoMargin level={5}>เล่มที่</TitleNoMargin>
-              <TitleNoMargin level={5}>Book no. ___________</TitleNoMargin>
+              <TitleNoMargin level={5}>
+                Book no. <Input placeholder="เล่มที่" />
+              </TitleNoMargin>
             </Col>
             <StyledEmptyBox flex={1} />
             <Col span={7}>
               <TitleNoMargin level={5}>เลขที่</TitleNoMargin>
-              <TitleNoMargin level={5}>Bill no. ___________</TitleNoMargin>
+              <TitleNoMargin level={5}>
+                Bill no. <Input placeholder="เลขที่" />
+              </TitleNoMargin>
             </Col>
           </Row>
         </StyledHeader>
@@ -67,19 +71,27 @@ const BillContainer = (): ReactElement => {
           <Row>
             <Col span={16}>
               <TitleNoMargin level={5}>นาม</TitleNoMargin>
-              <TitleNoMargin level={5}>Name ________________________________________</TitleNoMargin>
+              <TitleNoMargin level={5}>
+                Name <Input placeholder="นาม" />
+              </TitleNoMargin>
             </Col>
             <Col span={8}>
               <TitleNoMargin level={5}>วันที่</TitleNoMargin>
-              <TitleNoMargin level={5}>Date _________________</TitleNoMargin>
+              <TitleNoMargin level={5}>
+                Date <Input placeholder="วันที่" />
+              </TitleNoMargin>
             </Col>
             <Col span={16}>
               <TitleNoMargin level={5}>ที่อยู่</TitleNoMargin>
-              <TitleNoMargin level={5}>Address ______________________________________</TitleNoMargin>
+              <TitleNoMargin level={5}>
+                Address <Input placeholder="ที่อยู่" />
+              </TitleNoMargin>
             </Col>
             <Col span={8}>
               <TitleNoMargin level={5}>เลขผู้เสียภาษี</TitleNoMargin>
-              <TitleNoMargin level={5}>TaxId _________________</TitleNoMargin>
+              <TitleNoMargin level={5}>
+                TaxId <Input placeholder="เลขผู้เสียภาษี" />
+              </TitleNoMargin>
             </Col>
           </Row>
         </StyledSubHeaderDetail>
